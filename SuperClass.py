@@ -22,7 +22,9 @@ class CatMathObj:
     NumPI = 0,
     NumMisc = 0,
     NumLog = 0
-    def __init__(self,NumVars,NumQuad,NumCube,NumOtherPow,NumSin,NumCos,NumTan,NumCosec,NumSec,NumCot,NumPlus,NumMinus,NumMulti,NumDiv,NumFact,NumSqrt,NumRootCube,NumRootOther,NumSigma,NumTheta,NumPI,NumMisc,NumLog):
+    def __init__(self,NumVars = 0,NumQuad = 0,NumCube = 0,NumOtherPow = 0,NumSin = 0,NumCos = 0,NumTan = 0,NumCosec = 0,
+    NumSec = 0,NumCot = 0,NumPlus = 0,NumMinus = 0,NumMulti = 0,NumDiv = 0,NumFact = 0,NumSqrt = 0,NumRootCube = 0,NumRootOther = 0,
+    NumSigma = 0,NumTheta = 0,NumPI = 0,NumMisc = 0,NumLog = 0):
         self.NumVars = NumVars
         self.NumQuad = NumQuad
         self.NumCube = NumCube

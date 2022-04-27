@@ -1,10 +1,10 @@
-def GetValue(MMLInput,Tag):
+def GetValueFromMML(MMLInput,Tag):
     StartTag = f"<{Tag}>"
     EndTag = f"</{Tag}>"
     Out = MMLInput[MMLInput.find(StartTag)+len(StartTag):MMLInput.find(EndTag)]
     return Out
 
-def GetCountOf(MMLInput,Tag):
+def GetCountOfFromMML(MMLInput,Tag):
     StartTag = f"<{Tag}>"
     StartAt = MMLInput.find(StartTag)
     Count = 0
