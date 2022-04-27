@@ -20,8 +20,9 @@ class CatMathObj:
     NumSigma = 0,
     NumTheta = 0,
     NumPI = 0,
-    NumMisc = 0
-    def __init__(self,NumVars,NumQuad,NumCube,NumOtherPow,NumSin,NumCos,NumTan,NumCosec,NumSec,NumCot,NumPlus,NumMinus,NumMulti,NumDiv,NumFact,NumSqrt,NumRootCube,NumRootOther,NumSigma,NumTheta,NumPI,NumMisc):
+    NumMisc = 0,
+    NumLog = 0
+    def __init__(self,NumVars,NumQuad,NumCube,NumOtherPow,NumSin,NumCos,NumTan,NumCosec,NumSec,NumCot,NumPlus,NumMinus,NumMulti,NumDiv,NumFact,NumSqrt,NumRootCube,NumRootOther,NumSigma,NumTheta,NumPI,NumMisc,NumLog):
         self.NumVars = NumVars
         self.NumQuad = NumQuad
         self.NumCube = NumCube
@@ -44,6 +45,7 @@ class CatMathObj:
         self.NumTheta = NumTheta
         self.NumPI = NumPI
         self.NumMisc = NumMisc
+        self.NumLog = NumLog
     def HasTrigOps(self):
         return bool(self.NumSin  + self.NumCos + self.NumTan + self.NumCosec + self.NumSec + self.NumCot)
     

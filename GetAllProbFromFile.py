@@ -15,4 +15,5 @@ def GetProblems(FilePath):
     except:
         print("Eish")
     finally:
+        print(Problems)
         return Problems

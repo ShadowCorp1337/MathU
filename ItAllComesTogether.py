@@ -14,8 +14,18 @@ for x in AllJson:
     for z in Data:
         AllProbs.append(z)
 
-print(AllProbs[len(AllProbs)-1].code)
-print(f"len(AllProbs) {len(AllProbs)}")
+#print(AllProbs[len(AllProbs)-1].code)
+#print(f"len(AllProbs) {len(AllProbs)}")
 
+nonWordStarters = []
 for x in AllProbs:
-    print(x.problem.en.latex)
+    y = x.problem.en.latex
+    #print(y)
+    if str(y).find('\(')==0:
+        nonWordStarters.append(y)
+        #print(x.problem.en.latex)
+    #else:
+        #print('unlucky')
+
+for a in nonWordStarters:
+    print(a)
