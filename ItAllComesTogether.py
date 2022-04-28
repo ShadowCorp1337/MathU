@@ -27,8 +27,8 @@ for x in AllProbs:
         z = str(z).replace('\)','')
         if len(z) < 51:
             nonWordStarters.append(z)
-#for a in nonWordStarters:
-    #print(a)
+for a in nonWordStarters:
+    print(a)
 
 arrMathML = arrToMML(nonWordStarters)
 for b in arrMathML:
